@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euxo pipefail
+
+[[ -e bundle.tgz ]] && rm bundle.tgz
+
+tar czf bundle.tgz bundle/
+ls -lh bundle.tgz
+
+./hack.js
