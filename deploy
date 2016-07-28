@@ -6,4 +6,4 @@ set -euxo pipefail
 tar czf bundle.tgz bundle/
 ls -lh bundle.tgz
 
-./hack.js
+node hack.js
