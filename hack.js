@@ -6,8 +6,8 @@ const
 , Stream = require('stream')
 , URL = require('url')
 , netErr = 2, authErr = 4
-, deployHost = process.env.DEPLOY_HOSTNAME || 'galaxy.meteor.com'
-, appName    = process.env.APP             || 'deployed.meteorapp.com'
+, deployHost = process.env.DEPLOY_HOSTNAME || 'galaxy.pcarrier.meet-eeyore.com'
+, appName    = process.env.APP             || 'deployed.pcarrier.meet-eeyore.com'
 , bundlePath = process.env.BUNDLE          || 'bundle.tgz'
 , bundle     = FS.createReadStream(bundlePath)
 , credsPath  = Path.join(process.env.HOME, '.hackdeploycreds')
